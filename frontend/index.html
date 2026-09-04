@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Threat Detector</title>
+</head>
+
+<body>
+
+    <h1>AI Email Threat Detector</h1>
+
+    <textarea
+        id="email"
+        rows="10"
+        cols="60"
+        placeholder="Enter email text..."
+    ></textarea>
+
+    <br><br>
+
+    <button onclick="analyzeEmail()">
+        Analyze Email
+    </button>
+
+    <h2>Result</h2>
+
+    <p id="classification"></p>
+    <p id="risk"></p>
+    <p id="reason"></p>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
