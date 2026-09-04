@@ -16,7 +16,12 @@ app.add_middleware(
 
 class EmailRequest(BaseModel):
     email: str
-
+@app.get("/status")
+def status():
+    return {
+        "status": "online",
+        "service": "email threat detection"
+    }
 
 @app.get("/")
 def home():
